@@ -1,0 +1,17 @@
+package pers.lxf.wdk.beans;
+
+public class DBTable {
+    private String tableName;
+
+    public String getTableName() {
+        return tableName;
+    }
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
+
+    public DBTable(String tableName) {
+        this.tableName = tableName;
+    }
+}

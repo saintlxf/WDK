@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact name="wdk:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/wdk_jar</output-path>
+    <root id="root">
+      <element id="archive" name="wdk.jar">
+        <element id="module-output" name="wdk" />
+      </element>
+      <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:4.1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: com.zaxxer:SparseBitSet:1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
+      <element id="library" level="project" name="Maven: org.apache.poi:poi:4.1.2" />
+      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.19" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.4" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:4.1.2" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-math3:3.6.1" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-aspects:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.19" />
+      <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.06" />
+      <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:3.1.0" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.4.RELEASE" />
+      <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.13" />
+      <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.2.4.RELEASE" />
+    </root>
+  </artifact>
+</component>

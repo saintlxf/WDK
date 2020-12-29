@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hongtao.test.mappers.abcDao">
+	<resultMap id="BaseResultMap" type="abc">
+		<result column="id" property="id" jdbcType="int"/>
+		<result column="abc_name" property="abc_name" jdbcType="varchar"/>
+		<result column="abc_sfzh" property="abc_sfzh" jdbcType="datetime"/>
+		<result column="abc_email" property="abc_email" jdbcType="varchar"/>
+		<result column="abc_phone" property="abc_phone" jdbcType="varchar"/>
+	</resultMap>
+	<sql id="All_Column">
+		id abc_name abc_sfzh abc_email abc_phone 
+	</sql>
+	<sql id="Insert_Column">
+		abc_name abc_sfzh abc_email abc_phone 
+	</sql>
+	<select id="findById" resultMap="BaseResultMap">
+		SELECT
+		<include refid="All_Column"/>
+		FROM abc
+		WHERE id = #{id}
+	</select>
+	<insert id="addAbc" parameterType="abc">
+		INSERT INTO abc(
+		<include refid="Insert_Column"/>
+		)values(
+		#{abcName,jdbcType=VARCHAR},
+		#{abcSfzh,jdbcType=DATE},
+		#{abcEmail,jdbcType=VARCHAR},
+		#{abcPhone,jdbcType=VARCHAR})
+	</insert>
+	<update id="updateAbc"  parameterType="abc">
+		UPDATE abc
+		<trim prefix="set" suffixOverrides=",">
+		<if test="abcName!=null">abc_name=#{abcName},</if>
+		<if test="abcSfzh!=null">abc_sfzh=#{abcSfzh},</if>
+		<if test="abcEmail!=null">abc_email=#{abcEmail},</if>
+		<if test="abcPhone!=null">abc_phone=#{abcPhone},</if>
+		</trim>
+		WHERE id = #{id}
+	</update>
+	<delete id="deleteAbc">
+		DELETE FROM abc 
+		WHERE id = #{id}
+	</delete>
+</mapper>
